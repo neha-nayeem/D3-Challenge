@@ -9,7 +9,7 @@ The data set included with the assignment is based on 2014 ACS 1-year estimates:
 
 Bootstrap and custom CSS was used to pretty up the dashboard. 
 
-This can be viewed at: [Health Risks vs. Demographics Dashboard](https://github.com/neha-nayeem/D3-Challenge)
+This can be viewed at: [Health Risks vs. Demographics Dashboard](https://neha-nayeem.github.io/D3-Challenge)
 
 ## Core Assignment: D3 Dabbler (Required Assignment)
 Using D3, data was pulled in from the `data.csv` and two variables `Healthcare vs. Poverty` were used to create a scatter plot. The following was also completed:
@@ -26,9 +26,9 @@ For the bonus, more demographics and more risk factors were included on the char
 
 * Binding all of the CSV data to the circles to easily determine their x or y values when the labels are clicked.
 
-* Placed additional labels in the scatter plot and gave them click events so that users can decide which data to display. 
+* Placing additional labels in the scatter plot and giving them click events so that users can decide which data to display. 
 
-* Animated the transitions for circles' locations as well as the range of the axes. 
+* Animating the transitions for circles' locations as well as the range of the axes. 
 
 #### 2. Incorporate d3-tip
 Another layer of data was added to determine the true value of each data point: **tooltips**! Tooltips were added to the circles to display data that the user has selected. 
