@@ -177,7 +177,7 @@ function makeResponsive() {
             // Store the value clicked
             var xAxisValue = d3.select(this).attr("value");
 
-            // If the value is different from the default drawn chart
+            // If the value is different from the the one drawn by default
             if (xAxisValue !== xAxisFactor) {
 
                 // Assign new value to xAxisFactor
@@ -186,7 +186,7 @@ function makeResponsive() {
                 // Create new xScale domain
                 xScale.domain(domainX(censusData, xAxisFactor));
 
-                // Update xAxis wirh new scale
+                // Update xAxis with new scale
                 updateXAxis(xScale, xAxis);
 
                 // Update circles, state labels and tooltip
@@ -225,7 +225,7 @@ function makeResponsive() {
             // Store the value clicked           
             var yAxisValue = d3.select(this).attr("value");
 
-            // If the value is different from the default drawn chart
+            // If the value is different from the one drawn by default
             if (yAxisValue !== yAxisFactor) {
 
                 // Assign new value to yAxisFactor
@@ -271,7 +271,7 @@ function makeResponsive() {
         console.log(error);
     });
 
-} // close responsiveChart() 
+}; // close responsiveChart() 
 
 
 // Functions to determine x,y domains for scaling 
@@ -330,7 +330,7 @@ function updatePlot(circlesGroup, stateLabels, xScale, yScale, xAxisFactor, yAxi
 // ================================================================
 function updateTooltip(xAxisFactor, yAxisFactor, circlesGroup, stateLabels) {
 
-    // create variables for displaying
+    // create variables for displaying labels in tooltip
     var tooltipX = "";
     var tooltipY = "";
     var unitX = "";
