@@ -1,0 +1,63 @@
+.iframeContainer {
+    padding: 20px;
+    border: 1px solid #e3e3e3;
+}
+
+
+/* Sticky Footer rules (https://getbootstrap.com/examples/sticky-footer/) */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Padding bottom by footer height */
+    padding-bottom: 80px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 10px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+#footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#footer a {
+    color: #55c7c1;
+}
+
+.navbar-brand {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 35px !important;
+}
+
+.header-font {
+    font-family: 'Abril Fatface', cursive !important;
+}
+
+#pov-health,
+#pov-smoke,
+#pov-obese,
+#age-health,
+#age-smoke,
+#age-obese,
+#income-health,
+#income-smoke,
+#income-obese {
+    display: block;
+}
+
+.card-header {
+    background-color: #6edbd6 !important;
+}
