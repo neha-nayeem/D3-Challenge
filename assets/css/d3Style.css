@@ -40,6 +40,12 @@
     stroke: #e3e3e3;
 }
 
+.stateCircle:hover {
+    stroke: #275a57;
+    stroke-width: 1px;
+    ;
+}
+
 
 /* .chart {
     display: block;
