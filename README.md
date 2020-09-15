@@ -9,7 +9,7 @@ The data set included with the assignment is based on 2014 ACS 1-year estimates:
 
 Bootstrap and custom CSS was used to pretty up the dashboard. 
 
-This can be viewed at: [Health Risks vs. Demographics Dashboard](https://neha-nayeem.github.io/D3-Challenge)
+**This can be viewed at: [Health Risks vs. Demographics Dashboard](https://neha-nayeem.github.io/D3-Challenge)**
 
 ## Core Assignment: D3 Dabbler (Required Assignment)
 Using D3, data was pulled in from the `data.csv` and two variables `Healthcare vs. Poverty` were used to create a scatter plot. The following was also completed:
