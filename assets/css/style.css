@@ -46,18 +46,24 @@ body {
     font-family: 'Abril Fatface', cursive !important;
 }
 
-#pov-health,
-#pov-smoke,
-#pov-obese,
-#age-health,
-#age-smoke,
-#age-obese,
-#income-health,
-#income-smoke,
-#income-obese {
-    display: block;
+#poverty-healthcare,
+#poverty-smokes,
+#poverty-obesity,
+#age-healthcare,
+#age-smokes,
+#age-obesity,
+#income-healthcare,
+#income-smokes,
+#income-obesity {
+    display: none;
 }
 
 .card-header {
     background-color: #6edbd6 !important;
+}
+
+.card-inactive {
+    font-weight: lighter;
+    fill: #c9c9c9;
+    transition: fill 0.3s ease-out;
 }
