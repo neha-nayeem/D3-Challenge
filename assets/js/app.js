@@ -64,6 +64,12 @@ function makeResponsive() {
         var xAxisFactor = "poverty";
         var yAxisFactor = "healthcare";
 
+        // Initial active information card
+        // ============================================
+        var activeCard = d3.select(`#${xAxisFactor}-${yAxisFactor}`);
+        activeCard.style("display", "block");
+
+
         // Create x,y scales
         // ============================================
 
@@ -180,6 +186,9 @@ function makeResponsive() {
             // If the value is different from the the one drawn by default
             if (xAxisValue !== xAxisFactor) {
 
+                // Hide current info card
+                activeCard.style("display", "none");
+
                 // Assign new value to xAxisFactor
                 xAxisFactor = xAxisValue;
 
@@ -193,23 +202,32 @@ function makeResponsive() {
                 updatePlot(circlesGroup, stateLabels, xScale, yScale, xAxisFactor, yAxisFactor);
                 updateTooltip(xAxisFactor, yAxisFactor, circlesGroup, stateLabels);
 
+
                 // switch statement for updating clicked label to active and others to inactive
                 switch (xAxisFactor) {
                     case "poverty":
                         poverty.attr("class", "active");
                         age.attr("class", "inactive");
                         income.attr("class", "inactive");
-                        //var info = d3.select()
+                        // make relevant info card visible
+                        activeCard = d3.select(`#${xAxisFactor}-${yAxisFactor}`);
+                        activeCard.style("display", "block");
                         break;
                     case "age":
                         age.attr("class", "active");
                         income.attr("class", "inactive");
                         poverty.attr("class", "inactive");
+                        // make relevant info card visible
+                        activeCard = d3.select(`#${xAxisFactor}-${yAxisFactor}`);
+                        activeCard.style("display", "block");
                         break;
                     case "income":
                         income.attr("class", "active");
                         poverty.attr("class", "inactive");
                         age.attr("class", "inactive");
+                        // make relevant info card visible
+                        activeCard = d3.select(`#${xAxisFactor}-${yAxisFactor}`);
+                        activeCard.style("display", "block");
                         break;
                     default:
                         break;
@@ -227,6 +245,9 @@ function makeResponsive() {
 
             // If the value is different from the one drawn by default
             if (yAxisValue !== yAxisFactor) {
+
+                // hide current info card
+                activeCard.style("display", "none");
 
                 // Assign new value to yAxisFactor
                 yAxisFactor = yAxisValue;
@@ -247,16 +268,28 @@ function makeResponsive() {
                         healthcare.attr("class", "active");
                         smokes.attr("class", "inactive");
                         obese.attr("class", "inactive");
+
+                        // make relevant info card visible
+                        activeCard = d3.select(`#${xAxisFactor}-${yAxisFactor}`);
+                        activeCard.style("display", "block");
                         break;
                     case "smokes":
                         smokes.attr("class", "active");
                         healthcare.attr("class", "inactive");
                         obese.attr("class", "inactive");
+
+                        // make relevant info card visible
+                        activeCard = d3.select(`#${xAxisFactor}-${yAxisFactor}`);
+                        activeCard.style("display", "block");
                         break;
                     case "obesity":
                         obese.attr("class", "active");
                         smokes.attr("class", "inactive");
                         healthcare.attr("class", "inactive");
+
+                        // make relevant info card visible
+                        activeCard = d3.select(`#${xAxisFactor}-${yAxisFactor}`);
+                        activeCard.style("display", "block");
                         break;
                     default:
                         break;
